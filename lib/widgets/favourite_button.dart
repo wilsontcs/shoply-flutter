@@ -6,15 +6,20 @@ class FavouriteButton extends StatelessWidget {
     required this.isFavourite,
     required this.productName,
     this.onPressed,
+    this.compact = false,
   });
 
   final bool isFavourite;
   final String productName;
   final VoidCallback? onPressed;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) => IconButton(
     style: IconButton.styleFrom(
+      minimumSize: compact ? const Size.square(36) : const Size.square(48),
+      fixedSize: compact ? const Size.square(36) : null,
+      tapTargetSize: MaterialTapTargetSize.padded,
       backgroundColor: Theme.of(
         context,
       ).colorScheme.surfaceContainerLowest.withValues(alpha: 0.85),
@@ -26,9 +31,9 @@ class FavouriteButton extends StatelessWidget {
         : 'Add $productName to wishlist',
     selectedIcon: Icon(
       Icons.favorite,
-      size: 20,
+      size: compact ? 18 : 20,
       color: Theme.of(context).colorScheme.error,
     ),
-    icon: const Icon(Icons.favorite_border, size: 20),
+    icon: Icon(Icons.favorite_border, size: compact ? 18 : 20),
   );
 }

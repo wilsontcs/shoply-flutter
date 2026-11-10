@@ -18,6 +18,7 @@ import 'package:shoply_flutter/widgets/pagination_footer.dart';
 import 'package:shoply_flutter/widgets/product_grid.dart';
 import 'package:shoply_flutter/widgets/product_search_bar.dart';
 import 'package:shoply_flutter/widgets/recent_searches_panel.dart';
+import 'package:shoply_flutter/widgets/shoply_logo.dart';
 
 class ProductListScreen extends StatefulWidget {
   const ProductListScreen({super.key, this.isActive = true});
@@ -204,7 +205,14 @@ class _ProductListScreenState extends State<ProductListScreen> {
                     : const Align(
                         key: ValueKey<String>('catalogue-title'),
                         alignment: Alignment.centerLeft,
-                        child: Text('Shoply'),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            ShoplyLogo(),
+                            SizedBox(width: 10),
+                            Text('Shoply'),
+                          ],
+                        ),
                       ),
               ),
               actions: <Widget>[

@@ -88,9 +88,10 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    top: 12,
-                    right: 12,
+                    top: 0,
+                    right: 0,
                     child: FavouriteButton(
+                      compact: true,
                       isFavourite: isFavourite,
                       productName: product.title,
                       onPressed: onFavourite,
