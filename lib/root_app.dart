@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
-import 'app_router.dart';
-import 'controllers/favourites_controller.dart';
-import 'utils/app_theme_config.dart';
+import 'package:shoply_flutter/app_router.dart';
+import 'package:shoply_flutter/controllers/favourites_controller.dart';
+import 'package:shoply_flutter/utils/app_theme_config.dart';
 
 class RootApp extends StatefulWidget {
   const RootApp({super.key});

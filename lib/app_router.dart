@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import 'screens/error_screen.dart';
-import 'screens/main_screen.dart';
-import 'screens/product_detail_screen.dart';
-import 'screens/wishlist_screen.dart';
+import 'package:shoply_flutter/screens/error_screen.dart';
+import 'package:shoply_flutter/screens/main_screen.dart';
+import 'package:shoply_flutter/screens/product_detail_screen.dart';
+import 'package:shoply_flutter/screens/wishlist_screen.dart';
 
 class AppRouter {
   static const String home = '/';

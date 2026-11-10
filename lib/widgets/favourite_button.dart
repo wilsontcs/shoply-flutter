@@ -14,12 +14,21 @@ class FavouriteButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => IconButton(
+    style: IconButton.styleFrom(
+      backgroundColor: Theme.of(
+        context,
+      ).colorScheme.surfaceContainerLowest.withValues(alpha: 0.85),
+    ),
     onPressed: onPressed,
     isSelected: isFavourite,
     tooltip: isFavourite
         ? 'Remove $productName from wishlist'
         : 'Add $productName to wishlist',
-    selectedIcon: const Icon(Icons.favorite),
-    icon: const Icon(Icons.favorite_border),
+    selectedIcon: Icon(
+      Icons.favorite,
+      size: 20,
+      color: Theme.of(context).colorScheme.error,
+    ),
+    icon: const Icon(Icons.favorite_border, size: 20),
   );
 }

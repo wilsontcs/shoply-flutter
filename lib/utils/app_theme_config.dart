@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants/dimensions.dart';
+import 'package:shoply_flutter/constants/dimensions.dart';
 
 abstract final class AppThemeConfig {
   static ThemeData get light {

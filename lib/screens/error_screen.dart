@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../app_router.dart';
-import '../widgets/empty_state_view.dart';
+import 'package:shoply_flutter/app_router.dart';
+import 'package:shoply_flutter/widgets/empty_state_view.dart';
 
 class ErrorScreen extends StatelessWidget {
   const ErrorScreen({super.key, required this.arguments});

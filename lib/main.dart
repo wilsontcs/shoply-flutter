@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'root_app.dart';
+import 'package:shoply_flutter/root_app.dart';
 
 void main() async {
   await runZonedGuarded(

@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-import 'product_model.dart';
+import 'package:shoply_flutter/core/models/product_model.dart';
 
 part 'product_page_model.g.dart';
 

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 class ProductImage extends StatelessWidget {
   const ProductImage({super.key, required this.url, required this.label});
 
+  static String heroTag(int productId) => 'product-image-$productId';
+
   final String url;
   final String label;
 

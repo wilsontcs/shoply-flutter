@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 
-import '../core/api/core_api_const.dart';
-import '../core/api/core_api_error_resolver.dart';
-import '../core/api/core_api_response.dart';
-import '../core/models/product_model.dart';
-import '../core/models/product_page_model.dart';
-import 'base_repo.dart';
+import 'package:shoply_flutter/core/api/core_api_const.dart';
+import 'package:shoply_flutter/core/api/core_api_error_resolver.dart';
+import 'package:shoply_flutter/core/api/core_api_response.dart';
+import 'package:shoply_flutter/core/models/product_model.dart';
+import 'package:shoply_flutter/core/models/product_page_model.dart';
+import 'package:shoply_flutter/repositories/base_repo.dart';
 
 class ProductRepo extends BaseRepo {
   ProductRepo({super.api});

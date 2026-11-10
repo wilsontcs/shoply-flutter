@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'product_list_screen.dart';
-import 'wishlist_screen.dart';
+import 'package:shoply_flutter/screens/product_list_screen.dart';
+import 'package:shoply_flutter/screens/wishlist_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -35,8 +35,14 @@ class _MainScreenState extends State<MainScreen> {
           body: IndexedStack(
             index: tabIndex,
             children: <Widget>[
-              const ProductListScreen(),
-              WishlistScreen(onBrowseProducts: _showCatalogue),
+              HeroMode(
+                enabled: tabIndex == 0,
+                child: ProductListScreen(isActive: tabIndex == 0),
+              ),
+              HeroMode(
+                enabled: tabIndex == 1,
+                child: WishlistScreen(onBrowseProducts: _showCatalogue),
+              ),
             ],
           ),
           bottomNavigationBar: NavigationBar(

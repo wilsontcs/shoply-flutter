@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants/dimensions.dart';
+import 'package:shoply_flutter/constants/dimensions.dart';
 
 class EmptyStateView extends StatelessWidget {
   const EmptyStateView({

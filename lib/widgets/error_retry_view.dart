@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'empty_state_view.dart';
+import 'package:shoply_flutter/widgets/empty_state_view.dart';
 
 class ErrorRetryView extends StatelessWidget {
   const ErrorRetryView({

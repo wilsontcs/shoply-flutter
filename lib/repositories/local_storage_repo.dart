@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-import '../core/models/catalogue_cache_model.dart';
-import '../core/models/json_parsing.dart';
-import '../core/models/product_model.dart';
+import 'package:shoply_flutter/core/models/catalogue_cache_model.dart';
+import 'package:shoply_flutter/core/models/json_parsing.dart';
+import 'package:shoply_flutter/core/models/product_model.dart';
 
 class LocalStorageException implements Exception {
   const LocalStorageException();

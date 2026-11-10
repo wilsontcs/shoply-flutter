@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 
-import '../models/json_parsing.dart';
-import 'core_api_const.dart';
-import 'core_api_error_resolver.dart';
-import 'core_api_response.dart';
+import 'package:shoply_flutter/core/models/json_parsing.dart';
+import 'package:shoply_flutter/core/api/core_api_const.dart';
+import 'package:shoply_flutter/core/api/core_api_error_resolver.dart';
+import 'package:shoply_flutter/core/api/core_api_response.dart';
 
 class CoreApiRequest {
   CoreApiRequest({Dio? client})

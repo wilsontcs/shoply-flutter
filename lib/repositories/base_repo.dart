@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-import '../core/api/core_api_request.dart';
+import 'package:shoply_flutter/core/api/core_api_request.dart';
 
 /// Repositories own their default client, following the reference BaseRepo.
 abstract class BaseRepo {

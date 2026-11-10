@@ -1,4 +1,4 @@
-import '../../../constants/enums.dart';
+import 'package:shoply_flutter/constants/enums.dart';
 
 abstract class BaseApiException implements Exception {
   const BaseApiException(this.failure, {this.statusCode});

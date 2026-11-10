@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-import '../../constants/enums.dart';
-import 'exceptions/exception.dart';
+import 'package:shoply_flutter/constants/enums.dart';
+import 'package:shoply_flutter/core/api/exceptions/exception.dart';
 
 abstract final class CoreApiErrorResolver {
   static Exception resolveDioException(DioException exception) {

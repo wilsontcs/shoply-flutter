@@ -1,4 +1,4 @@
-import '../../constants/enums.dart';
+import 'package:shoply_flutter/constants/enums.dart';
 
 /// DummyJSON returns JSON directly; repositories map it to a typed success.
 /// Failures and cancellation are thrown rather than returned as empty data.
