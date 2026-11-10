@@ -1,17 +1,36 @@
-# shoply_flutter
+# Shoply
 
-A new Flutter project.
+A Flutter Android product catalogue with search, product details, and a persistent wishlist. Powered by the [DummyJSON API](https://dummyjson.com/docs/products); no API key is required.
 
-## Getting Started
+## Run the project
 
-This project is a starting point for a Flutter application.
+1. Install Flutter **3.44.0** (Dart **3.12.0**) and Android Studio with the Android SDK. Add Flutter to PATH.
+2. Accept Android licences and check your setup:
 
-A few resources to get you started if this is your first Flutter project:
+   ```sh
+   flutter doctor --android-licenses
+   flutter doctor
+   ```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+3. Start an Android emulator or connect an Android device with USB debugging enabled.
+4. From the `shoply-flutter` directory, run:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```sh
+   flutter pub get
+   flutter devices
+   flutter run -d <android-device-id>
+   ```
+
+To build a release APK, run `flutter build apk --release`. The output is `build/app/outputs/flutter-apk/app-release.apk`.
+
+## State management
+
+I chose **Provider with ChangeNotifier** because I used it in my previous project and found it stable and familiar. I previously tried GetX with Obx but encountered errors when reactive state was not configured correctly, so I preferred Provider for this project.
+
+## AI assistance and my changes
+
+AI generated the UI design and data models. I organised the file structure myself, following my previous project, and reused its API/core layer patterns. I adapted the generated code to these conventions and refined the product grid and search UI.
+
+## Known weakness and improvements
+
+The app does not yet have a cart or checkout flow. With more time, I would improve the UI and add cart features such as adding/removing items, updating quantities, and reviewing an order.
